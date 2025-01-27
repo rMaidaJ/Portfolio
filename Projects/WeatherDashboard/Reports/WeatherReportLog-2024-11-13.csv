@@ -1,0 +1,8 @@
+,,Weather,Weather,Weather,Weather,,Main,Main,Main,Main,Main,Main,Main,Main,,Wind,Wind,Clouds,,System,System,System,System,System,,,,
+Longitude,Latitude,Id,Main,Description,Icon,Base,Temp,Feels Like,Temp Min,Temp Max,Pressure,Humidity,SeaLevel,Ground Level,Visibility,Speed,Deg,All,Date,Type,Id,Country,Sunrise,Sunset,Time Zone,Id,Name,COD      
+-0.1257,51.5085,803,Clouds,broken clouds,04d,stations,9.66,9.66,8.22,10.9,1036,85,1036,1031,10000,1.03,0,82,1731493802,2,268730,GB,1731482144,1731514447,0,2643743,London,200
+151.2073,-33.8679,501,Rain,moderate rain,10n,stations,19.77,19.97,18.04,20.75,1012,83,1012,1007,10000,2.24,22,92,1731495128,2,2018875,AU,1731437096,1731486847,39600,2147714,Sydney,200
+13.5833,37.8167,803,Clouds,broken clouds,04d,stations,17.64,17.68,16.82,18.1,1019,85,1019,950,10000,3.6,188,64,1731495404,2,2080844,IT,1731476651,1731513359,3600,2523918,Province of Palermo,200
+3.042,36.7525,802,Clouds,scattered clouds,03d,stations,20.9,20.25,20.9,20.9,1013,46,1013,1007,10000,5.14,190,40,1731495193,1,1060,DZ,1731479051,1731516019,3600,2507480,Algiers,200
+-0.2026,51.9022,803,Clouds,broken clouds,04d,stations,9.27,8.29,7.24,11.09,1036,87,1036,1024,10000,2.06,20,55,1731495463,2,2007816,GB,1731482246,1731514382,0,2636940,Stevenage,200
+-0.1257,51.5085,803,Clouds,broken clouds,04d,stations,10.55,9.83,9.16,11.81,1036,83,1036,1031,10000,0.89,357,82,1731496456,2,268730,GB,1731482144,1731514447,0,2643743,London,200

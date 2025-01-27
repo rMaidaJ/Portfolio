@@ -1,0 +1,30 @@
+Client Search Selector
+----------------------
+	Navbar				--- ]base.html
+	<h1> Enter Search Parameters	--- entersearchparams.html
+	Search Parameters Fields	--- clientsearchselector.html
+	buttons
+		- New Client
+	Footing				--- base.html
+
+Client Search Results
+----------------------
+	Navbar				--- base.html
+	Results				--- clientsearchresults.html
+	buttons
+		- New Client
+		- Prev Page
+		- Next Page
+	Footing				--- base.html
+		
+Client Details
+--------------
+	Navbar				--- base.html
+	Field labels & buttons		--- clientdetails.html
+	Footing				--- base.html
+	buttons
+		- Save
+		
+from app.models import User_Status
+print( User_Status.get_status_narrative(10))
+

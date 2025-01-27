@@ -1,0 +1,95 @@
+/*
+    Style Sheet     :form.css
+    Author          :Richard Maida Jimenez
+    Date            :January 2025
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Forms Style sheet Fund Trader.
+    Page            :Various.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        03/01/2025  Richard Maida Jimenez   Fund Trader Web Site.
+ */
+ .form-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+ }
+
+.form-label {
+   text-align: right;
+   padding-top: 5px;
+   padding-right: 5px;
+   padding-bottom: 5px;
+}
+
+.form-string-field {
+   padding-top: 6px;
+   padding-left: 0px;
+}
+
+.form-string-field-font,
+.form-select-field,
+.form-checkbox {
+   font-family: "Nunito Sans";
+   font-size: 1em;
+   background-color: rgb(233, 235, 218);
+   border: 1px;
+}
+
+.form-checkbox {
+   width: 18px;
+   height: 18px;
+}
+
+.form-submit {
+   display: block;
+   text-align: left;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.form-button,
+.form-button-cs {
+   height: 30px;
+   width: 70px;
+   font-family: "Nunito Sans", serif;
+   font-size: 1em;
+   background-color:rgb(73, 119, 119);
+   color: white;
+   transition: 0.5s;
+}
+
+.form-button-cs {
+   width: 185px;
+}
+
+.form-button:hover {
+   background-color: white;
+   color: rgb(73, 119, 119);
+   font-weight: bold;
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-group-button:active {
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-flash-message {
+   color: red;
+}
+
+.form-page-link a {
+   color: rgb(73, 119, 119);
+   text-decoration: none;
+   font-weight: 500;
+   transition: 0.5s;
+}
+
+.form-page-link a:hover {
+   color: yellow;
+   background-color: rgb(73, 119, 119);
+   letter-spacing: 1px;
+   margin: 0px 0px;
+   padding: 5px 18px;
+}

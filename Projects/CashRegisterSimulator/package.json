@@ -1,0 +1,15 @@
+{
+  "name": "cashregistersimulator",
+  "version": "1.0.0",
+  "description": "Cash Register Simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Maida Jimenez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

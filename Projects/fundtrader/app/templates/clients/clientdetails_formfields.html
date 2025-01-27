@@ -1,0 +1,131 @@
+    <form class="form-container">
+        <div class="form-label">
+            {{ form.code.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.code(class="form-string-field-font") }}
+            {% for error in form.code.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.surname.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.surname(class="form-string-field-font", size=40) }}
+            {% for error in form.surname.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.forenames.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.forenames(class="form-string-field-font", size=70) }}
+            {% for error in form.forenames.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.title.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.title( class="form-select-field") }}
+            {% for error in form.title.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.date_of_birth.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.date_of_birth(class="form-string-field-font", size=10) }}
+            {% for error in form.date_of_birth.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.ni_number.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.ni_number(class="form-string-field-font", size=12) }}
+            {% for error in form.ni_number.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.start_date.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.start_date(class="form-string-field-font", size=12) }}
+            {% for error in form.start_date.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.end_date.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.end_date(class="form-string-field-font", size=12) }}
+            {% for error in form.end_date.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.status.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.status(class="form-select-field-font") }}
+            {% for error in form.status.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.aml_flag.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.aml_flag(class="form-checkbox", size=60) }}
+            {% for error in form.aml_flag.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.bank_name.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.bank_name(class="form-string-field-font") }}
+            {% for error in form.bank_name.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.bank_sort_code.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.bank_sort_code(class="form-string-field-font", size=12) }}
+            {% for error in form.bank_sort_code.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.bank_account_no.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.bank_account_no(class="form-string-field-font", size=20) }}
+            {% for error in form.bank_account_no.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+    </form>

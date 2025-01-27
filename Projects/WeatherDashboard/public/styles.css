@@ -1,0 +1,283 @@
+/*
+    Style Sheet     :styles.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Style sheet for index page for Weather Report.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        17/11/2024  Richard Maida Jimenez   Weather Report Web Site.
+ */
+ 
+* {
+   box-sizing: border-box;
+   margin: 0;
+   font-family: "Oswald", sans-serif; 
+   color: gold;
+}
+
+body {
+   background-image: url("./weatherDashboard.jpg");
+}
+
+.header-container {
+   display: grid;
+   grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+   background-color:#11122b;
+ }
+
+.header-sides {
+   display: block;  
+   padding: 40px;
+   text-align: center;
+   align-self: center; 
+   font-size: 1.25em; 
+}
+
+ 
+#lblAppName {
+     font-size: 2.5em;
+     text-align: center;
+     align-self:center;
+}
+
+#lblAppNarrative2 a {
+   font-size: 2rem;
+   text-decoration: none;
+   transition:1s;
+}
+
+#lblAppNarrative2 a:hover {
+   opacity: 0.9;
+   color: teal;
+   letter-spacing: 3px;
+}
+
+.entry-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding-top: 10px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+   font-size: 1.25rem;
+}
+
+#lblPoweredBy {
+   font-size: 0.75em;
+   text-align: center;
+   align-self:center;
+ }
+
+ #lblPoweredBy a {
+   text-decoration: none;
+   font-size: 2em;
+ }
+
+.form-group {
+   padding-top: 20px;
+   border: solid black;
+   background-color: rgb(153, 161, 138);
+}
+
+.form-group label {
+   display: none;
+}
+
+.form-group input {
+   font-size: 1.25rem;
+   padding: 15px;
+   padding-top: 20px;
+   border: none;
+   border-radius: 2px;
+   border-bottom: 3px solid #11122b;
+   background-color:#11122b;
+   color: rgb(156, 156, 155);
+   width: 96%;
+   display: block;
+   transition: all 0.3s;
+}
+
+#edlLocation {
+   background-color: #11122b;
+}
+
+.form input:focus {
+   outline: none;
+   box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.1);
+   border-bottom: 3px solid #cea135;
+}
+
+select {
+   width:  96%;
+   height: 50px;
+   background-color: rgb(168, 206, 206);
+   border: none;
+   font-size: 1.25rem;
+   padding-left: 10px;
+   background-color:#11122b;
+   color: rgb(156, 156, 155);
+}
+
+select>option {
+   background-color: #11122b;
+   font-size: 1.25rem;
+}
+
+option {
+   background-color: #11122b;
+   font-size: 1.25rem;
+}
+
+#edlLocation {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+#selCountry {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.form-group-buttons {
+   display: flex;
+   justify-content:flex-end;
+   height: 50px;
+}
+
+.form-group-button {
+   height: 50px;
+   width: 120px;
+   margin-right: 10px;
+   font-size: 1.00em;
+   background-color:#11122b;
+   transition: 0.5s;
+}
+
+.form-group-button:hover {
+   background-color: gold;
+   color: #11122b;
+}
+
+.form-group-button:active {
+   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.spacer10 {
+   height: 10px;
+   width: 100%px;
+}
+
+.weather-results {
+   display: none;
+   grid-template-columns: 1fr 1fr 4fr;
+   grid-gap: 5px;
+   padding-top: 8px;
+   padding-left: 30px;
+   padding-bottom: 7px;
+   font-size: 2em;
+   border: 3px solid #11122b;
+   margin: 10px;
+   background-color: rgba( 74, 134, 148, 0.5 );
+}
+
+#weather-header {
+   display: block;
+   width: 100%;
+   text-align: right;
+   font-size: 1.5em;
+}
+
+.weather-state {
+   display: flex;
+   flex-direction: column;
+   justify-content: baseline;
+   text-align: right;
+   padding-right: 10px;
+   height: 40px;
+}
+
+.weather-state #weather-icon {
+   align-items: right;
+   padding-right: 0px;
+   width: 100%;
+   height: 80px;
+}
+
+#weather-description {
+   text-align: right;
+   padding-right: 10px;
+   text-transform: capitalize;
+}
+
+.weather-field_desc {
+   text-align: right;
+   padding-right: 10px;
+   width: 300px;
+}
+
+.weather-field_value {
+   text-align: left;
+   padding-left: 10px;
+   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+
+   .header-container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .entry-section {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+   }
+
+   .form-group {
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   #lblinstructs,
+   #lblPoweredBy {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .weather-results {
+      display: none;
+      grid-template-columns: 1fr 2fr;
+   }
+
+   #weather-icon {
+      text-align: left;
+      padding-left: 10px;
+   }
+
+   #weather-description {
+      text-align: left;
+      padding-left: 10px;
+   }
+
+   .weather-field-left {
+      display: none;
+   }
+
+   .weather-field-right {
+      display:none;
+   }
+
+   .weather-field_desc {
+      width: 230px;
+   }
+
+   .weather-field_value {
+      width: 50%;
+   }
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello, {{ current_user.forename.split()[0] }}!</h1>
+
+<div class="spacer60"></div>
+<div class="spacer60"></div>
+<div class="form-container">
+    <div></div>
+    <div><h1>Welcome to<br>Fund Broker</h1></div>
+    <div class="form-label">
+    </div>
+    <div class="form-string-field">
+        A comprehensive portal that enables the secure
+        <br>trading of Mutual Fund Assets on Fund Supermarkets.
+        <br><br>From initial Client Trade Entry to final Settlement,
+        <br>Fund Broker offers a highly professional service for
+        <br>all your Investment Objectives.
+    </div>
+    <div></div>
+</div>
+
+{% endblock %}

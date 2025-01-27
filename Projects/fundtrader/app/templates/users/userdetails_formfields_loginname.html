@@ -1,0 +1,10 @@
+    <div class="form-label">
+        {{ form.login_name.label }}
+    </div>
+    
+    <div class="form-string-field">
+        {{ form.login_name(class="form-string-field-font", size=33) }}
+        {% for error in form.login_name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>

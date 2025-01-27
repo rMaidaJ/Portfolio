@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color:rgb(180, 206, 206);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color:rgb(73, 119, 119);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.spacer5 {
+    height: 5px;
+    width: 100%;
+}
+
+.spacer10 {
+    height: 10px;
+    width: 100%;
+}
+
+.spacer20 {
+    height: 20px;
+    width: 100%;
+}
+
+.spacer30 {
+    height: 30px;
+    width: 100%;
+}
+
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}

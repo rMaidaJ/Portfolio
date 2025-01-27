@@ -1,0 +1,75 @@
+MAIN
+	-> LOGIN
+	-> CLIENT SEARCH
+		- On
+			Client Code
+			Surname
+			Forenames
+			Title
+			date Of Birth
+			ni number
+			etart Date
+			end Date
+			status
+			AML Flag
+			Bank
+			Bank Sort Code
+			Bank Account No
+		-> VIEW -> EDIT(AMEND)
+		-> EDIT (NEW)
+		-> EDIT (AMEND)
+		-> HOLDINGS VIEW - Dealing Histories
+		
+	-> FUND SEARCH
+		- On
+			Isin
+			Name
+			Status
+			Fund Mgr Id
+		-> VIEW -> EDIT(AMEND)
+			-> NEW TRADE
+			-> TRADE SEARCH...
+			-> CLIENT SEARCH...
+		-> EDIT (NEW)
+		-> EDIT (AMEND)
+		-> FUND MGR SEARCH
+			- On
+				Fund Mgr Id
+				Fund Mgr Name
+			-> VIEW -> FUND SEARCH......
+				-> -> EDIT (AMEND)
+			-> EDIT(AMEND)
+			-> EDIT (NEW)
+	-> TRADE SEARCH
+		- On
+			Client Trade Ref
+			Client Code
+			Isin
+			Fund Mgr Id
+			Type
+			Basis
+			Status
+			Contract Note Id
+			
+		-> VIEW -> EDIT(AMEND)
+		-> EDIT(NEW)
+		-> EDIT(AMEND)
+		-> CONTRACT NOTE SEARCH
+			-> VIEW
+			-> EDIT(AMEND)
+			-> EDIT(NEW)
+			
+		
+	-> USERS
+		-> VIEW
+		-> ENTRY
+		
+	-> AUDIT SEARCH
+		-> VIEW
+		
+
++++Advisors
+++++Advisor Search
+
+Settlement & Cash Movements
+

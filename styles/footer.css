@@ -1,0 +1,108 @@
+/*
+    Style Sheet     :footer.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Footer Style sheet for index page for Personal Portfolio.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        25/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+
+
+.footer-section {
+    background-color: #11122b;   
+    color: #cbcbcb; 
+    align-content: center;
+}
+
+.navbar-ftr-links {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-ftr-links li {
+    display: block;
+    position:relative;
+    float: left;
+    left: 36%;
+    right: 0%;
+    padding: 25px 25px;
+    font-size: 0.85em;
+    transition: 0.5s;
+}
+
+.navbar-ftr-links li:hover {
+    letter-spacing: 2px;
+}
+
+.navbar-ftr-links li a {
+    text-decoration: none;
+    color: #cbcbcb;
+    padding-bottom: 20px;
+}
+
+.navbar-ftr-links li a:hover {
+    color: #cea135;
+    border-bottom: 3px solid#cea135;
+    border-radius: 0 0 15% 15%;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    list-style: none;
+    float:left;
+    left: 41%;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #cbcbcb;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.social-media-links a:hover {
+    color: #cea135;
+    border-bottom: 3px solid#cea135;
+    border-radius: 0 0 15% 15%;
+}
+
+.social-media-facebook a {
+    text-decoration: none;
+    color: #cbcbcb;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 100px;
+    transition: 0.5s;
+}
+
+.social-media-linked-in a {
+    text-decoration: none;
+    color: #cbcbcb;
+    font-size: 2.5em;
+    padding: 10px;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.copywright-ftr {
+    display: block;
+    position: relative;
+    float: right;
+    font-size: 0.65em;
+    color: teal;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}

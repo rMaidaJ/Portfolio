@@ -1,0 +1,79 @@
+CLIENT
+------
+Client Code - PK
+Surname
+Forename
+Title		- Mr/Mrs/Ms.....
+Date Of Birth
+NI Number
+Start Date
+End Date
+Status		- Active/Left
+AML Flag
+
+
+BANK ACCOUNT
+------------
+Client Code - PK - FK to CLIENT
+Bank Code - 	FK to BANK	BANK
+Bank Sort Code			----
+Bank Account No			Id
+				Name
+FUND
+----
+Isin
+Name
+Status	- Open/Closed To New Investment/Closed
+Price
+Fund Mgr Id - FK to FUND_MGR	FUND_MGR
+				--------
+CLIENT_TRADE			Fund Mgr Id
+------------			Fund Mgr Name
+Client Trade Ref		
+Client Code - FK to CLIENT
+Isin - FK to FUND
+Fund Mgr Id - FK to FUND_MGR
+Type	-Buy/Sell	- TRADE_TYPE
+Basis	- Unit/Value	- BASIS
+Units
+Price
+Value
+Status	- Ready For Market/Gone To Market/FM Confirmed/Settled
+Contract Note Id - FK to Contract Note.
+
+
+AUDIT						USERS
+-----						-----
+Id								Id
+Client Trade Ref - FK to CLIENT_TRADE 				Name
+Audit Type Entered/Executed/Contract Note/Settled		Password
+Audit User
+Audit Date
+Audit Time
+
+CONTRACT_NOTE
+-------------
+Id
+Client Trade Ref - FK to CLIENT_TRADE
+Units
+Price
+Value
+Market Trade Date
+Entered By
+Entered Date
+Entered Time
+
+HOLDINGS_HISTORY_TX
+-------------------
+Tx Ref
+Client Code
+Isin
+Tx Date
+Type
+Basis
+Units
+Bookcost (If Buy)
+Proceeds (If Sell )
+
+
+https://sql.toad.cz/?

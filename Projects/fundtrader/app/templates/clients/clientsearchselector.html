@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form class="form-container">
+        <div class="form-label">
+            <h2><b>Enter Search Parameters</b></h2>
+        </div>
+        <div></div>
+    </form>
+
+    {% include 'clients/clientdetails_formfields.html' %}
+
+    <div class="spacer30"></div>
+
+    <form class="form-container" action="" method="post">
+        <div></div>
+        <div class="form-submit">
+            {{ form.search(class="form-button-cs") }}
+        </div>
+
+        <div></div>
+        <div class="spacer5"></div>
+
+        <div></div>
+        <div class='form-page-link'>
+            <a href="{{ url_for('clients.clientdetails', any_mode_op='New', any_client_code='newclient') }}">Create New Client</a>
+        </div>
+    </form>
+
+{% endblock %}

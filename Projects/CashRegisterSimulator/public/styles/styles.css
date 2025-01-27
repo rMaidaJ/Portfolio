@@ -1,0 +1,279 @@
+/*
+    Style Sheet     :styles.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Style sheet for index page for Cash Register Simulator.
+    Page            :
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        27/11/2024  Richard Maida Jimenez   Cash Register Simulator Web Site.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Antonio", sans-serif;
+}
+
+body {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgb(2, 36, 46);
+}
+
+.header {
+    display: block;
+    font-size: 2em;
+    padding: 40px;
+    color:burlywood;
+    text-align: center;
+}
+
+.cash-reg-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.margin-left {
+    display: block;
+}
+
+.cash-reg-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 580px;
+    background-color:cadetblue;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.cash-reg-bal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 20px;
+    padding-right: 15px;
+    height: 20px;
+}
+
+.cash-reg-bal label {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.cash-reg-device {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#cash-reg-dep-start,
+#cash-reg-bal-run,
+#cash-reg-display-mode,
+#cash-reg-display-sale-total,
+#cash-reg-display-amount {
+    text-align: right;
+    background-color: black;
+    color: #cea135;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#cash-reg-display-mode,
+#cash-reg-display-sale-total,
+#cash-reg-display-amount {
+    width: 505px;
+    border: none;
+    margin-left: 0px; 
+}
+
+#cash-reg-display-mode
+#cash-reg-display-sale-total {
+    margin-top:10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#cash-reg-display-sale-total {
+    height: 30px;
+}
+
+#cash-reg-display-amount {
+    border: none; 
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.cash-reg-btn-container {
+    display: grid;
+    grid-template-columns: 120px 70px 130px 70px 110px;
+    grid-gap: 5px;
+}
+
+.cash-reg-btn-modes {
+    display: grid;
+    grid-template-columns: 120px;
+    grid-gap: 5px;
+}
+
+.cash-reg-btn-mode {
+    width: 120px;
+    height: 40px;
+    font-size: 1.15rem;
+}
+
+.cash-reg-btn-numbers {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-gap: 5px;
+}
+
+.cash-reg-btn-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+}
+
+.cash-reg-btn-gap {
+    display: grid;
+    grid-template-columns: 70px;
+}
+
+.cash-reg-btn-enter {
+    width: 70px;
+    height: 40px;
+    padding-top: 0px;
+    font-size: 1.15rem;
+}
+
+.cash-reg-btn-pay-total-wrapper {
+    display: grid;
+    grid-template-columns: 100px;
+}
+
+.cash-reg-btn-pay-methods {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    height: 85px;
+}
+
+.cash-reg-btn-pay-method {
+    width: 45px;
+    height: 40px;
+    font-size: 1.15rem;
+}
+
+.cash-reg-btn-pay-totals {
+    display: grid;
+    grid-template-columns: 70px;   
+    grid-gap: 5px; 
+}
+
+.cash-reg-btn-pay-total {
+    width: 95px;
+    height: 40px;
+    font-size: 1.15rem;
+}
+
+#btn-sale,
+#btn-qty,
+#btn-percent {
+    background-color: palegreen;
+    border: none;
+    border-right: 2px solid rgb(76, 104, 76);
+    border-bottom: 2px solid rgb(76, 104, 76);
+}
+
+#btn-refund,
+#btn-void,
+#btn-clear,
+#btn-enter {
+    background-color: pink;
+    border: none;
+    border-right: 2px solid rgb(145, 110, 116);
+    border-bottom: 2px solid rgb(145, 110, 116);
+}
+
+#btn-refund:active,
+#btn-void:active,
+#btn-clear:active,
+#btn-sale:active,
+#btn-enter:active {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+#btn-seven,
+#btn-nine,
+#btn-four,
+#btn-six,
+#btn-one,
+#btn-three,
+#btn-zero,
+#btn-dot {
+    background-color: lightgray;
+    border: none;
+    border-right: 2px solid rgb(80, 78, 78);
+    border-bottom: 2px solid rgb(80, 78, 78);
+}
+
+#btn-eight,
+#btn-five,
+#btn-two,
+#btn-zeroes {
+    background-color: darkgray;
+    border: none;
+    border-right: 2px solid rgb(71, 69, 69);
+    border-bottom: 2px solid rgb(71, 69, 69);
+}
+
+#btn-cash,
+#btn-card,
+#btn-subtotal,
+#btn-total {
+    background-color: lightblue;
+    border: none;
+    border-right: 2px solid rgb(80, 121, 134);
+    border-bottom: 2px solid rgb(80, 121, 134);
+}
+
+#btn-seven:active,
+#btn-eight:active,
+#btn-nine:active,
+#btn-four:active,
+#btn-five:active,
+#btn-six:active,
+#btn-one:active,
+#btn-two:active,
+#btn-three:active,
+#btn-zero:active,
+#btn-zeroes:active,
+#btn-dot:active {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+#btn-qty:active,
+#btn-percent:active,
+#btn-cash:active,
+#btn-card:active,
+#btn-subtotal:active,
+#btn-total:active {
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+.spacer10 {
+    height: 10px;
+    width: 100%;
+ }
+
+ .spacer60 {
+    height: 10px;
+    width: 100%;
+ }

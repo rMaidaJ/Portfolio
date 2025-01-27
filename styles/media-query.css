@@ -1,0 +1,173 @@
+/*
+    Style Sheet     :media-query.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Media Queries Style sheet for index page for Personal Portfolio.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        22/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+@media screen and ( max-width: 1300px ) {
+    /*
+     * Header navigation bar.
+     */
+    .navbar-hdr-barmenu {
+        float: right;
+        display: block;
+        margin: 0px 15px;
+        font-size: 3.0em;
+        transform: 1s;
+    }
+
+    .navbar-hdr {
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .navbar-hdr-links{
+        display: none;
+        width: 200px;
+    }
+
+    .navbar-hdr-links li {
+        width: 100%;
+        text-align: left;
+        padding: 5px;
+        margin: 0px !important;
+        transform: 1s;
+    }
+
+    .navbar-hdr-links li {
+        width: 220px;
+    }
+
+    .navbar-hdr-links li:hover ul {
+        height: 250px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .skewed-header-section {
+        position:relative;
+        top: 0;
+        overflow: hidden;
+    }
+    
+    .skewed-header-section >
+    .skewed-header-wrapper >
+    .skewed-header-content >
+    .navbar-hdr-barmenu-pages {
+        display: block;
+        font-size: 3.0em;
+        color: white;
+        margin-right: 30px;
+        width: 190px;
+        transform: 1s;
+    }
+    
+    .skewed-header-section >
+    .skewed-header-wrapper >
+    .skewed-header-content {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+    }
+    
+    .skewed-header-section >
+    .skewed-header-wrapper >
+    .skewed-header-content >
+    .navbar-hdr-links-wrapper {
+        display: none;
+        flex-direction: column;
+        height: 700px;
+    }
+    .skewed-header-section >
+    .skewed-header-wrapper >
+    .skewed-header-content >
+    .navbar-hdr-links-wrapper li {
+        width: 260px;
+        text-align: left;
+        padding: 5px;
+        transform: 1s;
+    }
+
+    .skewed-header-section >
+    .skewed-header-wrapper >
+    .skewed-header-content >
+    .navbar-hdr-links-wrapper li:hover ul{
+        height: 350px;
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+    
+@media screen and ( max-width:700px ) {
+    .section-top-wrapper >
+    .section-top-container  >
+    .section-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: -4px;
+    }
+
+    .section-top >
+    .section-top-right p {
+        text-align: center;
+    }
+
+    .section-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .section-bottom-margin {
+        display: none;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        float: left;
+        width: 100%;
+    }
+    .navbar-ftr-links {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    .navbar-ftr-links li {
+        width: 150px;
+    }
+
+    .social-media {
+        float: left;
+        margin-left: 0px;
+    }
+
+    .social-media-links {
+        display: flex;
+        float:left;
+        padding-left: 30px;
+    }
+
+    .social-media-facebook {
+        padding-left: 0px;
+        width: 60px;
+    }
+
+    .social-media-linked-in {
+        padding-left: 0px;
+        width: 60px;
+    } 
+    
+    .copywright-ftr {
+        margin: 15px;
+    }
+}

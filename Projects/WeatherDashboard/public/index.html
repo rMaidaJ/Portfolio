@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+    HTML Document   :index.html
+    Author          :Richard Maida Jimenez
+    Date            :October 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Web Site Cloning - Greens of Padstow (https://greenspadstow.co.uk/)
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        12/11/2024  Richard Maida Jimenez   Weather Report Web Site.
+ -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather Report</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="left-margin">
+        </div>
+
+        <div class="header-sides">
+            <div id="lblAppNarrative1">
+                NARRATIVE1
+            </div>
+        </div>
+
+        <div id="lblAppName">
+            APP NAME
+        </div>
+
+        <div class="header-sides">
+            <div id="lblAppNarrative2">
+                NARRATIVE2
+            </div>
+        </div>
+
+        <div class="right-margin">
+        </div>
+    </div>
+
+    <div class="entry-section">
+        <div id="lblAppInstructs">
+            INSTRUCTIONS
+        </div>
+
+        <div class="form-group">
+            <div class="spacer10"></div>
+
+            <div id="#edlLocation">
+                <label for="edlLocation">Location</label>
+                <input type="text" id="edlLocation" placeholder="Enter Location">              
+            </div>
+            
+            <div class="spacer10"></div>
+            <div class="spacer10"></div>
+
+            <div id="#selCountry">
+                <label for="selCountry">Country</label>
+                <select id="selCountry" name="selCountry">
+                </select>
+            </div>
+
+            <div class="spacer10"></div>
+            <div class="spacer10"></div>
+            
+            <div class="form-group-buttons">
+                <div id="#btnEnter">
+                    <button class="form-group-button" type="submit" id="btnEnter">Enter</button>
+                </div>
+
+                <div id="#btnClear">
+                    <button class="form-group-button" type="submit" id="btnClear">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="lblPoweredBy">
+            POWERED_BY
+        </div>
+    </div>
+
+    <div class="weather-results">
+        <div id="weather-header">
+            <h2>CITYTOWN<br>COUNTRY</h2>
+        </div>
+
+        <div class="weather-state">
+            <div id="weather-icon">
+                <img id="weather-icon1" src="DUMMY" alt="weather icon">
+            </div>
+
+            <div id="weather-description">
+                WEATHER_DESC
+            </div>
+        </div>
+
+        <div class="weather-field-right">
+        </div>
+
+        <!-- New Line -->
+        <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Temperature:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-temp">
+                TEMPERATURE_VALUE
+            </div>
+        </div>
+    
+        <!-- New Line -->
+        <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Feels Like:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-feels-like">
+                FEELS LIKE
+            </div>
+        </div>
+
+        <!-- New Line -->
+        <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Minimum:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-temp-min">
+                MIN TEMP
+            </div>
+        </div>
+
+        <!-- New Line -->
+        <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Maximum:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-temp-max">
+                MAX TEMP
+            </div>
+        </div>
+
+        <!-- New Line -->
+         <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Humidity:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-humidity">
+                HUMIDITY
+            </div>
+        </div>
+
+        <!-- New Line -->
+         <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Pressure:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-pressure">
+                PRESSURE
+            </div>
+        </div>
+
+        <!-- New Line -->
+         <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Wind Speed:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-wind-speed">
+                WIND SPEED
+            </div>
+        </div>
+            
+        <!-- New Line -->
+         <div class="weather-field-left">
+        </div>
+
+        <div class="weather-field_desc">
+            Wind Direction:
+        </div>
+
+        <div class="weather-field-value">
+            <div id="weather-wind-direction">
+                WIND DIRECTION
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src='./assets/js/bundle.js'></script>
+</body>
+</html>

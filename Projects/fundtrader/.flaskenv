@@ -1,0 +1,2 @@
+FLASK_APP=fundtrader.py
+FLASK_DEBUG=1

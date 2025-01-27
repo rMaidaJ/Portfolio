@@ -1,0 +1,64 @@
+Lisa Se4rp3nt!
+
+
+/app
+	/static
+		common.css
+		form.css
+		login.css
+		navbar.css
+		
+	/templates
+		base.html
+		flashmessage.html
+		index.html
+		navbar.html
+		pagenotready.html
+		passwordreset.html
+		userdetails.html
+		userdetails_formfields.html
+		userdetails_formfields_loginname.html
+		userdetails_formfields_password.html
+	
+	__init__.py
+	forms.py
+	models.py
+	routes.py
+	
+/app
+	/main
+		__init__.py
+		routes.py
+	/clients
+	/funds
+	/trades
+	/users			<-- blueprint package
+		__init__.py	<-- blueprint creation
+		forms.py	<-- user forms
+		routes.py	<-- user routes
+		
+	/static
+		common.css
+		form.css
+		login.css
+		navbar-hdr.css
+		
+	/templates
+		base.html
+		flashmessage.html
+		index.html
+		pagenotready.html
+		
+		/clients
+		/funds
+		/trades
+		/users
+			login.html
+			passwordreset.html
+			userdetails.html
+			userdetails_formfields.html
+			userdetails_formfields_loginname.html
+			userdetails_formfields_password.html
+	
+	__init__.py		<-- blueprint registration
+	models.py		<-- models

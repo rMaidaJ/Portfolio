@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form class="form-container" action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+
+        <div class="spacer60"></div>
+        <div></div>
+
+        <div class="form-label">
+            {{ form.login_name.label }}
+        </div>
+        <div class ="form-string-field">
+            {{ form.login_name(class="form-string-field-font", size=33) }}
+            <br>
+            {% for error in form.login_name.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.password.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.password(class="form-string-field-font", size=33) }}
+            <br>
+            {% for error in form.password.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="spacer60"></div>
+        <div></div>
+
+        <div></div>
+        <div class="form-submit">
+            {{ form.submit(class="form-button") }}
+        </div>
+    </form>
+
+    <div class="spacer30"></div>
+    <div></div>
+
+    <div class="login-links-container">
+        <div></div>
+        <div><a href="{{ url_for('users.passwordReset') }}">Edit User or Renew Password</a></div>
+
+        <div class="spacer10"></div>
+        <div></div>
+
+        <div></div>
+        <div><a href="{{ url_for('users.userdetails', any_mode_op='New', any_login_name='newuser') }}">Register New User</a></div>
+    </div>
+
+    <div class="spacer60"></div>
+
+    {% include 'flashmessage.html' %}
+{% endblock %}

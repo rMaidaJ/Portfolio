@@ -1,0 +1,99 @@
+    <form class="form-container" action="" method="post">
+        {{ form.hidden_tag() }}
+
+        {% if mode_op == 'Edit'  %}
+            <div class="form-label">
+                {{ form.login_name.label }}
+            </div>
+            
+            <div class="form-string-field">
+                {{ form.login_name(class="form-string-field-font", size=33) }}
+                {% for error in form.login_name.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="form-label">
+            {{ form.id.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.id(class="form-string-field-font", size=10) }}
+            {% for error in form.id.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.surname.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.surname }}
+            {% for error in form.surname.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.forename.label }}
+        </div>
+        <div class="form-string-field">
+            {{ form.forename(class="form-string-field-font", size=132) }}        
+            {% for error in form.forename.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-label">
+            {{ form.title.label }}
+        </div>     
+        <div class="form-string-field">
+            {{ form.title( class="form-select-field") }}
+            {% for error in form.title.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>        
+
+        {% if mode_op == 'New' %}
+            <div class="form-label">
+                {{ form.login_name.label }}
+            </div>
+            
+            <div class="form-string-field">
+                {{ form.login_name(class="form-string-field-font", size=33) }}
+                {% for error in form.login_name.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if mode_op != 'View' %}
+            <div class="form-label">
+                {{ form.password.label }}
+            </div>
+        
+            <div class="form-string-field">
+                {{ form.password(class="form-string-field-font", size=33) }}
+                {% for error in form.password.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+        
+            <div class="form-label">
+                {{ form.password_confirm.label }}
+            </div>
+            <div class="form-string-field">
+                {{ form.password_confirm(class="form-string-field-font", size=33) }}
+                {% for error in form.password_confirm.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="form-label">
+            {{ form.status.label }}           
+        </div>
+        <div class="form-string-field">
+            {{ form.status(class="form-string-field-font", size=10) }}
+        </div>
+    </form>

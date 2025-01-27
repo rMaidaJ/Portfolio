@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+    HTML Document   :index.html
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Personal Portfolio Web Site.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        17/10/2024  Richard Maida Jimenez   Personal Portfolio - New Code.
+ -->
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Faculty+Glyphic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Cash Register Simulator</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Cash Register Simulator</h1>
+    </div>
+
+    <div class="cash-reg-wrapper">
+        <div class="margin-left"></div>
+
+        <div class="cash-reg-container">
+            <div class="cash-reg-bal">
+                <label for="cash-reg-dep-start">Day Start Cash Deposit:</label>
+                <input type="text" id="cash-reg-dep-start">
+            </div>
+
+            <div class="spacer10"></div>
+
+            <div class="cash-reg-bal">
+                <label for="cash-reg-bal-run">Running Balance:</label>
+                <input type="text" id="cash-reg-bal-run">
+            </div>
+
+            <div class="cash-reg-device">
+                <div class="cash-reg-display">
+                    <input type="text" id="cash-reg-display-mode">
+                    <input type="text" id="cash-reg-display-sale-total">
+                    <input type="text" id="cash-reg-display-amount">
+                </div>
+
+                <div class="cash-reg-btn-container">
+                    <div class="cash-reg-btn-modes"> <!-- Left Hand Buttons-->
+                        <div id="#btnSale">
+                            <button class="cash-reg-btn-mode" type="submit" id="btn-sale">SALE</button>
+                        </div>
+                        <div id="#btnRefund">
+                            <button class="cash-reg-btn-mode" type="submit" id="btn-refund">REFUND</button>
+                        </div>
+
+                        <div id="#btnVoid">
+                            <button class="cash-reg-btn-mode" type="submit" id="btn-void">VOID</button>
+                        </div>
+
+                        <div id="#btnClear">
+                            <button class="cash-reg-btn-mode" type="submit" id="btn-clear">CLEAR</button>
+                        </div>
+                    </div>
+
+                    <div class="cash-reg-btn-gap"></div>
+
+                    <div class="cash-reg-btn-numbers">
+                        <!-- Top row of digits.-->
+                        <div id="#btnSeven">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-seven">7</button>
+                        </div>
+
+                        <div id="#btnEight">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-eight">8</button>
+                        </div>
+
+                        <div id="#btnNine">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-nine">9</button>
+                        </div>
+
+                        <!-- Second row of digits.-->
+                        <div id="#btnFour">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-four">4</button>
+                        </div>
+
+                        <div id="#btnFive">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-five">5</button>
+                        </div>
+
+                        <div id="#btnSix">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-six">6</button>
+                        </div>
+
+                        <!-- Third row of digits.-->
+                        <div id="#btnOne">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-one">1</button>
+                        </div>
+
+                        <div id="#btnTwo">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-two">2</button>
+                        </div>
+
+                        <div id="#btnThree">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-three">3</button>
+                        </div>
+
+                        <!-- Fourth row of digits.-->
+                        <div id="#btnZero">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-zero">0</button>
+                        </div>
+
+                        <div id="#btnZeroes">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-zeroes">00</button>
+                        </div>
+
+                        <div id="#btnDot">
+                            <button class="cash-reg-btn-number" type="submit" id="btn-dot">.</button>
+                        </div>
+                    </div>
+
+                    <div class="cash-reg-btn-gap">
+                        <div id="#btnEnter">
+                            <button class="cash-reg-btn-enter" type="submit" id="btn-enter">ENTER</button>
+                        </div>
+
+                        <div id="#btnBackSpace">
+                            <button class="cash-reg-btn-enter" type="submit" id="btn-backSpace">BCK SPC</button>
+                        </div>
+
+                        <div class="spacer60"></div>
+                        <div class="spacer60"></div>
+                        <div class="spacer60"></div>
+                        <div class="spacer60"></div>
+                        <div class="spacer60"></div>
+                        <div class="spacer60"></div>
+                    </div>
+
+                    <div class="cash-reg-btn-pay-total-wrapper">
+                        <div class="cash-reg-btn-pay-methods">
+                            <div id="#btnQty">
+                                <button class="cash-reg-btn-pay-method" type="submit" id="btn-qty">QTY</button>
+                            </div>
+
+                            <div id="#btnPercent">
+                                <button class="cash-reg-btn-pay-method" type="submit" id="btn-percent">%</button>
+                            </div>
+
+                            <div id="#btnCash">
+                                <button class="cash-reg-btn-pay-method" type="submit" id="btn-cash">CASH</button>
+                            </div>
+
+                            <div id="#btnCard">
+                                <button class="cash-reg-btn-pay-method"type="submit" id="btn-card">CARD</button>
+                            </div>
+                        </div>
+
+                        <div class="cash-reg-btn-pay-totals">
+                            <div id="#btnSubtotal">
+                                <button class="cash-reg-btn-pay-total" type="submit" class="btn-total" id="btn-subtotal">SUBTOTAL</button>
+                            </div>
+
+                            <div id="#btnTotal">
+                                <button class="cash-reg-btn-pay-total" type="submit" class="btn-total" id="btn-total">TOTAL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src='./assets/js/bundle.js'></script>
+</body>
+</html>

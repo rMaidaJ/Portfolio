@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.1 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="CnVBvvraG81W5cuvQBZY">
+    <mxGraphModel dx="1404" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dwIZC6C4lW82Fir49CFO-1" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Edit%20Field%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22280%22%20y%3D%22210%22%20width%3D%22390%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="94" width="920" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="40" y="94" width="920" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;FUND BROKER:&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 24px; background-color: initial;&quot;&gt;USER DETAILS&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="40" y="94" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-11" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp;Edit Field&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="172" width="198" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-12" value="&lt;b&gt;Forename:&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="232" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-13" value="&lt;b&gt;Surname:&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="202" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-14" value="&lt;b&gt;Title:&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="262" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-15" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;Login Name:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="292" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-16" value="&lt;b&gt;Password:&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="322" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-35" value="&lt;b&gt;Id&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="172" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-36" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp;Edit Field&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="202" width="418" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-37" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp;Dropdown&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="262" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-38" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;Drop Down&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="232" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-39" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&amp;nbsp;Edit Field&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="292" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-41" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;Edit Field&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="322" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dwIZC6C4lW82Fir49CFO-53" value="Save" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="881" y="564" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a29qZIJmyTv8nRKUc-aj-1" value="&lt;b&gt;Password:&amp;nbsp;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" parent="1" vertex="1">
+          <mxGeometry x="41" y="352" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a29qZIJmyTv8nRKUc-aj-2" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;Edit Field&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="191" y="352" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

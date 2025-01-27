@@ -1,0 +1,14 @@
+Source:
+https://medium.com/self-modifying-code/exposing-classes-functions-and-other-fun-stuff-with-webpack-8592821d4ec8
+
+
+npm init
+npm install
+npm install gulp-cli -g
+npm install gulp -D
+npx -p touch nodetouch gulpfile.js
+npm install webpack-stream -D
+
+
+
+gulp scripts-compile

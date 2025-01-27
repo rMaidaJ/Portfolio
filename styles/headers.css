@@ -1,0 +1,90 @@
+/*
+    Style Sheet     :headers.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :header Style sheet for index page for Personal Portfolio.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        25/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+ /*
+  * Home Page.
+  */
+ .header-centre {
+    display: flex;
+    justify-content: center;
+    font-size: 5.0rem;
+    font-weight: 400;
+    padding: 40px;
+    margin: 0;
+    background-color:#11122b;
+    color: #cea135;
+}
+/*
+ * The Other Pages.
+ */
+.skewed-header-section {
+    position: sticky;
+    top: 0;
+    height: 250px;
+    overflow: hidden;
+}
+
+.skewed-header-section >
+.skewed-header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness();
+    background-color: teal;
+    background-image: url( '../images/background-teal-skewer.jpg' );
+}
+
+.skewed-header-section >
+.skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header-section >
+.skewed-header-wrapper >
+.skewed-header-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header-section >
+.skewed-header-wrapper >
+.skewed-header-content >
+.skewed-header-title {
+    background-color: #cea135;
+    color: #11122b;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 220px;
+    padding: 40px 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.skewed-header-section > 
+.skewed-header-wrapper >
+.skewed-header-content >
+.navbar-hdr-barmenu-pages {
+    display: none;
+}

@@ -1,0 +1,85 @@
+/*
+    Style Sheet     :common.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Common Style sheet for index page for Personal Portfolio.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        22/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #a9aeb3;
+    /*font-family: "Faculty Glyphic", sans-serif;*/
+    font-family: "Raleway", sans-serif;
+    background-image: url( '../images/background_teal.jpg' );
+    background-attachment: fixed; /* Do not slide image up and down */
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-column-text {
+    display: block;
+    color: #cea123;
+    background-color: rgba(22, 57, 65, 0.75);
+    padding: 10px;
+    text-align: center;
+}
+
+.features-column-text a {
+    text-decoration: none;
+    color: #cea123;
+    transition: 0.5s;
+}
+
+.features-column-text a:hover {
+    letter-spacing: 2px;
+}
+
+.skills-list {
+    padding: 10px;
+}
+
+.skills-list-item {
+    padding: 20px;
+    font-size: 1.25em;
+    list-style: none;
+    text-decoration: none;
+}
+
+.skills-list-item a {
+    text-decoration: none;
+    color: #cea123;
+    transition: 0.5s;
+}
+
+.skills-list-item a:hover {
+    letter-spacing: 2px;
+    color: rgb(121, 187, 187);
+    background-color: rgb(6, 49, 49);
+}
+
+.features-column-text b {
+    font-size: 1.5em;
+}
+
+.spacer20 {
+   height: 20px;
+   width: 100%;
+}
+
+.spacer60 {
+    height: 60px;
+    width: 100%;
+ }

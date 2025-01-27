@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Faculty+Glyphic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='common.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar-hdr.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <title>Fund Trader - {{ page_title }}</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header-title">
+            <h1>Fund Trader</h1><h2>{{ title }}</h2>
+        </div>
+        
+        <nav class="navbar-hdr">
+            <ul class="navbar-hdr-links">
+                <li><a href="{{ url_for('main.index') }}">Home</a></li>
+                <li><a href="{{ url_for('clients.clientsearchselector') }}">Clients</a></li>
+                <li><a href="{{ url_for('main.pagenotready', any_heading='Fund Details') }}">Funds</a></li>
+                <li><a href="{{ url_for('main.pagenotready', any_heading='Trade Details') }}">Trades</a></li>
+                <li><a href="{{ url_for('main.pagenotready', any_heading='Contract Details') }}">Contract<br>Notes</a></li>
+                <li><a href="{{ url_for('users.userdetails', any_mode_op='View', any_login_name=current_user.login_name) }}">Users</a></li>
+                <li><a href="{{ url_for('main.pagenotready', any_heading='Audit Details') }}">Audit</a></li>
+                {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('users.logout') }}">Logout</a><li>
+                {% else %}
+                    <li><a href="{{ url_for('users.login') }}">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+    
+    {% block content %}{% endblock%}
+
+    <footer class="footer-container">
+        <div></div>
+        <div>&copy Richard Maida Jimenez 2024</div>
+    </footer>
+</body>
+</html>

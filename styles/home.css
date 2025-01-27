@@ -1,0 +1,71 @@
+/*
+    Style Sheet     :home.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Navigation Bar Headers Style sheet for index page for Personal Portfolio.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        26/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+.section-top-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.section-top-wrapper > .section-top-container {
+    width: 1000px;
+}
+
+.section-top-wrapper > .section-top-container  > .section-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.section-top-wrapper > .section-top-container  > .section-top > .section-top-left img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.section-top > .section-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+    text-align: centre;
+    color: #cea123;
+    background-color: hsla(190, 55%, 17%, 0.75);
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.section-top > .section-top-right p {
+    text-align: left;
+}
+
+.section-top > .section-top-right b {
+    font-size:3em;
+}
+
+.section-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 20px;
+    color: #cea123;
+}
+
+.section-bottom-text {
+    background-color: rgba(22, 57, 65, 0.75);
+    padding: 40px;
+}
+
+.section-bottom-text b {
+    font-size: 1.5em;
+}

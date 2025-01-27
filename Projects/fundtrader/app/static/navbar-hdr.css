@@ -1,0 +1,91 @@
+/*
+    Style Sheet     :navbar-hdr.css
+    Author          :Richard Maida Jimenez
+    Date            :November 2024
+    Version         :1.00
+    Course          :Software Development Skills Bootcamp Works
+    Project         :Navigation Bar Headers Style sheet Fund Trader.
+    Page            :Home.
+
+    Version     Date        Author                  Comments
+    -------     -------     ---------------------   --------
+    1.00        26/11/2024  Richard Maida Jimenez   Personal Portfolio Web Site.
+ */
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color:rgb(73, 119, 119);
+}
+
+.header-title {
+    display: block;
+    color: #ffffff;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.header-title  h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.header-title  h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.navbar-hdr {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    color: #cebbc9;
+    align-content: center;
+}
+
+.navbar-hdr::after {
+    content: '';            /* The content property is used with the ::before and ::after pseudo-elements, to insert generated content. */
+    display: table;         /* Lets the element behave like a <table> element */
+    clear: both;            /* Clear specifies what should happen with the element that is next to a floating element.
+                               Both = Element is pushed below both left abd right floated elements. */
+ }
+
+ .navbar-hdr-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-hdr-links li {
+    display: block;
+    position: relative;
+    float:left;
+    padding: 20px 35px;
+    font-size: 0.85em;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.navbar-hdr-links li:hover {
+    letter-spacing: 1px;
+}
+
+.navbar-hdr-links li a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.navbar-hdr-links li a:hover {
+    color: #11122b;
+    background-color: #cea135;
+    border-radius: 5px;
+    font-weight: 700;
+}
